@@ -140,7 +140,6 @@ class UnusedL10nAnalyzer {
         final supertype = classElement.supertype;
         if (supertype is InterfaceType) {
           final report = _getUnusedReports(
-            // ignore: deprecated_member_use
             supertype.element,
             usages,
             rootFolder,
